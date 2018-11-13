@@ -11,7 +11,7 @@
     document.write("<div>hostnameは" + location.hostname + "</div>");
     <!--
     var Nowymdhms　=　new Date();
-    var NowYear = Nowymdhms.getYear();
+    var NowYear = Nowymdhms.getFullYear();
     var NowMon = Nowymdhms.getMonth() + 1;
     var NowDay = Nowymdhms.getDate();
     var NowWeek = Nowymdhms.getDay();
@@ -24,6 +24,9 @@
     }
     if(NowMin < 10){
     	NowMin = "0"+NowMin;
+    }
+    if(NowSec < 10){
+	NowSec = "0"+NowSec;
     }
     document.write(NowYear+"年"+NowMon+"月"+NowDay+"日("+Week[NowWeek]+") "+NowHour+":"+NowMin+":"+NowSec)
     // -->
